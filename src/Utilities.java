@@ -60,7 +60,7 @@ public class Utilities {
         LinkedList<String> toReturn = new LinkedList<>();
         String[] arr = s.split(delimiter);
         for(int i=0; i<arr.length; i++) {
-            toReturn.add(arr[i]);
+            toReturn.add(arr[i].trim());
         }
         return toReturn;
     }
@@ -106,5 +106,8 @@ public class Utilities {
         }
         String toReturn = s.substring(0, s.length()-1);
         return toReturn;
+    }
+    public static String flatten(String s) {
+        return s.toLowerCase();
     }
 }

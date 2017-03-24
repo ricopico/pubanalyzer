@@ -70,9 +70,21 @@ public class PublicationObjectHashTable {
             toClean.setAuthorsListFromString(authorString);
 
             //operations to individual authors
-            //TODO: remove question mark authors
             Set<String> authorsToRemove = new HashSet<>();
             for(String author : toClean.getAuthorsList()) {
+                /*
+                remove empty authors
+                 */
+                if(author.isEmpty()) {
+                    authorsToRemove.add(author);
+                }
+                if(author.equals(" ")) {
+                    authorsToRemove.add(author);
+                }
+
+                /*
+                remove question mark authors
+                 */
                 //get question mark ratio
                 int numQuestionMarks = Utilities.charOccurencesInString(author, '?');
                 if(numQuestionMarks == 0) {
@@ -84,6 +96,10 @@ public class PublicationObjectHashTable {
                 }
             }
 
+            /*
+            check for redundancy
+             */
+
             LinkedList<String> cleanedList = new LinkedList<>();
             for(String author : toClean.getAuthorsList()) {
                 if(!authorsToRemove.contains(author)) {
@@ -93,7 +109,29 @@ public class PublicationObjectHashTable {
 
             toClean.setAuthorsList(cleanedList);
             toClean.setAuthorsStringFromList(cleanedList);
-            
+
+            //check for redundant authors
+            Set<String> seenAuthors = new HashSet<>();
+            Set<String> redundantAuthors = new HashSet<>();
+            for(String author : toClean.getAuthorsList()) {
+                if(seenAuthors.contains(author)) {
+                    redundantAuthors.add(author);
+                } else {
+                    seenAuthors.add(author);
+                }
+            }
+            cleanedList = new LinkedList<>();//reset the list
+            for(String author : toClean.getAuthorsList()) {
+                if(redundantAuthors.contains(author)) {
+                    if(!cleanedList.contains(author)) {
+                        cleanedList.add(author);
+                    }
+                } else {
+                    cleanedList.add(author);
+                }
+            }
+            toClean.setAuthorsList(cleanedList);
+            toClean.setAuthorsStringFromList(cleanedList);
         }
     }
     /*TODO
