@@ -70,7 +70,6 @@ public class PublicationObjectHashTable {
             toClean.setAuthorsListFromString(authorString);
 
             //operations to individual authors
-            //TODO: remove question mark authors
             Set<String> authorsToRemove = new HashSet<>();
             for(String author : toClean.getAuthorsList()) {
                 //get question mark ratio
@@ -93,6 +92,17 @@ public class PublicationObjectHashTable {
 
             toClean.setAuthorsList(cleanedList);
             toClean.setAuthorsStringFromList(cleanedList);
+
+            //check for redundant authors
+            Set<String> seenAuthors = new HashSet<>();
+            for(String author : toClean.getAuthorsList()) {
+                if(seenAuthors.contains(author)) {
+                    System.out.println("redundant : " + toClean.getTitle() + " : " + toClean.getAuthorsList());
+                } else {
+                    seenAuthors.add(author);
+                }
+
+            }
             
         }
     }
