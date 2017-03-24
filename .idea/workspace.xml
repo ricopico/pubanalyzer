@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3c0037-3750-47ab-a5a7-682da1b4118e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/output/output.out" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/output/output.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Analyzer.java" afterPath="$PROJECT_DIR$/src/Analyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PublicationObject.java" afterPath="$PROJECT_DIR$/src/PublicationObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" afterPath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utilities.java" afterPath="$PROJECT_DIR$/src/Utilities.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/output.out" afterPath="$PROJECT_DIR$/src/output/output.out" />
     </list>
     <ignored path="PubAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +38,7 @@
       <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
+            <state relative-caret-position="833">
               <caret line="51" column="55" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="64" />
               <folding />
             </state>
@@ -54,7 +48,7 @@
       <file leaf-file-name="2012faculty.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input/2012faculty.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="60571">
               <caret line="3563" column="58" selection-start-line="3563" selection-start-column="0" selection-end-line="3564" selection-end-column="0" />
               <folding />
             </state>
@@ -74,7 +68,7 @@
       <file leaf-file-name="PublicationObjectHashTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PublicationObjectHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="612">
               <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -86,7 +80,7 @@
       <file leaf-file-name="PublicationObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="1632">
               <caret line="122" column="39" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="49" />
               <folding>
                 <element signature="e#3992#3993#0" expanded="true" />
@@ -99,7 +93,7 @@
       <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="1122">
               <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -126,8 +120,8 @@
       <file leaf-file-name="output.out" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/output/output.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="532" column="24" selection-start-line="532" selection-start-column="24" selection-end-line="532" selection-end-column="24" />
+            <state relative-caret-position="204">
+              <caret line="527" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="1238" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -513,7 +507,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31943032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31943032" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -990,7 +984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/input/2012faculty.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="60571">
           <caret line="3563" column="58" selection-start-line="3563" selection-start-column="0" selection-end-line="3564" selection-end-column="0" />
           <folding />
         </state>
@@ -1009,10 +1003,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PublicationObjectHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="612">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="49" />
+          <folding>
+            <element signature="e#3992#3993#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3524#3525#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,41 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="51" column="55" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="122" column="39" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="49" />
-          <folding>
-            <element signature="e#3992#3993#0" expanded="true" />
-            <element signature="e#4038#4039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3524#3525#0" expanded="true" />
-            <element signature="e#3562#3563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/output/output.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="532" column="24" selection-start-line="532" selection-start-column="24" selection-end-line="532" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="527" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="1238" selection-end-column="0" />
           <folding />
         </state>
       </provider>
