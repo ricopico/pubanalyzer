@@ -72,6 +72,19 @@ public class PublicationObjectHashTable {
             //operations to individual authors
             Set<String> authorsToRemove = new HashSet<>();
             for(String author : toClean.getAuthorsList()) {
+                /*
+                remove empty authors
+                 */
+                if(author.isEmpty()) {
+                    authorsToRemove.add(author);
+                }
+                if(author.equals(" ")) {
+                    authorsToRemove.add(author);
+                }
+                
+                /*
+                remove question mark authors
+                 */
                 //get question mark ratio
                 int numQuestionMarks = Utilities.charOccurencesInString(author, '?');
                 if(numQuestionMarks == 0) {
