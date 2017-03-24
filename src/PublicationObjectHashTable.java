@@ -56,19 +56,44 @@ public class PublicationObjectHashTable {
     public void cleanAuthorsList() {
         for(String title : titleToPublicationObject.keySet()) {
             PublicationObject toClean = titleToPublicationObject.get(title);
+
+            //operations to the overall strings
             String authorString = toClean.getAuthorsString();
+
+            //remove ...
             authorString = authorString.replace("...\"","");
             authorString = authorString.replace("\"","");
-
-            //TODO: remove question mark authors
-            if(authorString.contains("?")) {
-                toClean.prettyPrint();
-            }
 
             authorString = authorString.trim();
 
             toClean.setAuthorsString(authorString);
             toClean.setAuthorsListFromString(authorString);
+
+            //operations to individual authors
+            //TODO: remove question mark authors
+            Set<String> authorsToRemove = new HashSet<>();
+            for(String author : toClean.getAuthorsList()) {
+                //get question mark ratio
+                int numQuestionMarks = Utilities.charOccurencesInString(author, '?');
+                if(numQuestionMarks == 0) {
+                    continue;
+                }
+                double ratio = author.length()/numQuestionMarks;
+                if(ratio == 1) {
+                    authorsToRemove.add(author);
+                }
+            }
+
+            LinkedList<String> cleanedList = new LinkedList<>();
+            for(String author : toClean.getAuthorsList()) {
+                if(!authorsToRemove.contains(author)) {
+                    cleanedList.add(author);
+                }
+            }
+
+            toClean.setAuthorsList(cleanedList);
+            toClean.setAuthorsStringFromList(cleanedList);
+            
         }
     }
     /*TODO

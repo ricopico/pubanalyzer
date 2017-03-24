@@ -5,10 +5,14 @@ public class PubAnalyzer_Test {
 
     public static void main(String[] args) {
 
-        testLevenshteinDistance();
+        testTrimLastChar();
+        //testLevenshteinDistance();
 
     }
 
+    public static void testTrimLastChar() {
+        System.out.println(Utilities.trimLastChar("test"));
+    }
     public static void testLevenshteinDistance() {
         //test utilities: levenshtein distance
         String s1 = "test";
