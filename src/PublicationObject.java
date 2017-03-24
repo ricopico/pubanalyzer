@@ -122,6 +122,16 @@ public class PublicationObject {
     public void setAuthorsListFromString(String authorsString) {
         setAuthorsList(Utilities.splitByDelimiter(authorsString, ","));
     }
+    public void setAuthorsStringFromList(LinkedList<String> authorsString) {
+        String authorStringToSet = "";
+
+        for(String author : authorsString) {
+            authorStringToSet += author;
+            authorStringToSet += ",";
+        }
+        authorStringToSet = Utilities.trimLastChar(authorStringToSet);
+        setAuthorsString(authorStringToSet);
+    }
 
     public void setAuthorsList(LinkedList<String> authorsList) {
         this.authorsList = authorsList;

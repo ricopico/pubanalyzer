@@ -100,4 +100,11 @@ public class Utilities {
         }
         writer.close();
     }
+    public static String trimLastChar(String s){
+        if(s.length()==0) {
+            return s;
+        }
+        String toReturn = s.substring(0, s.length()-1);
+        return toReturn;
+    }
 }

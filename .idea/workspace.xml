@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3c0037-3750-47ab-a5a7-682da1b4118e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/Analyzer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PubAnalyzer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObject.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/Utilities.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PubAnalyzer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/input/2012faculty.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/output/output.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/pubanalyzer.config" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Analyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PubAnalyzer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PubAnalyzer_Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PublicationObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utilities.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/input/2012faculty.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/output/output.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pubanalyzer.config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/PubAnalyzer_Test.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PubAnalyzer_Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObject.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/Utilities.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/Utilities.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PubAnalyzer_Test.java" afterPath="$PROJECT_DIR$/src/PubAnalyzer_Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PublicationObject.java" afterPath="$PROJECT_DIR$/src/PublicationObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" afterPath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utilities.java" afterPath="$PROJECT_DIR$/src/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/output.out" afterPath="$PROJECT_DIR$/src/output/output.out" />
     </list>
     <ignored path="PubAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,8 +36,8 @@
       <file leaf-file-name="PubAnalyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PubAnalyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -62,8 +46,8 @@
       <file leaf-file-name="Analyzer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+            <state relative-caret-position="340">
+              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -72,8 +56,8 @@
       <file leaf-file-name="2012faculty.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/input/2012faculty.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="416">
+              <caret line="1867" column="34" selection-start-line="1867" selection-start-column="34" selection-end-line="1867" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -92,10 +76,23 @@
       <file leaf-file-name="PublicationObjectHashTable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PublicationObjectHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="360">
+              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicationObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+              <folding>
+                <element signature="e#3064#3065#0" expanded="true" />
+                <element signature="e#3114#3115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +101,8 @@
       <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="725">
+              <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,9 +113,11 @@
       <file leaf-file-name="PubAnalyzer_Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PubAnalyzer_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="204">
+              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+              <folding>
+                <element signature="e#301#302#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,8 +125,8 @@
       <file leaf-file-name="output.out" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/output/output.out">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="803" column="23" selection-start-line="803" selection-start-column="23" selection-end-line="803" selection-end-column="23" />
+            <state relative-caret-position="314">
+              <caret line="837" column="50" selection-start-line="837" selection-start-column="50" selection-end-line="837" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -157,9 +156,9 @@
         <option value="$PROJECT_DIR$/src/input/2012faculty.txt" />
         <option value="$PROJECT_DIR$/src/pubanalyzer.config" />
         <option value="$PROJECT_DIR$/src/output/output.out" />
-        <option value="$PROJECT_DIR$/src/PublicationObject.java" />
         <option value="$PROJECT_DIR$/src/Analyzer.java" />
         <option value="$PROJECT_DIR$/src/LevenshteinDistance.java" />
+        <option value="$PROJECT_DIR$/src/PublicationObject.java" />
         <option value="$PROJECT_DIR$/src/PubAnalyzer_Test.java" />
         <option value="$PROJECT_DIR$/src/Utilities.java" />
         <option value="$PROJECT_DIR$/src/PublicationObjectHashTable.java" />
@@ -588,7 +587,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -621,14 +620,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Analyzer.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PubAnalyzer_Test.java</url>
-          <line>13</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
@@ -639,7 +632,7 @@
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -652,7 +645,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -998,38 +993,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LevenshteinDistance.java" />
-    <entry file="file://$PROJECT_DIR$/src/output/output.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="803" column="23" selection-start-line="803" selection-start-column="23" selection-end-line="803" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PubAnalyzer_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PublicationObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+          <folding>
+            <element signature="e#3064#3065#0" expanded="true" />
+            <element signature="e#3114#3115#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="725">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output/output.out">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="837" column="50" selection-start-line="837" selection-start-column="50" selection-end-line="837" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input/2012faculty.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="1867" column="34" selection-start-line="1867" selection-start-column="34" selection-end-line="1867" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,34 +1049,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input/2012faculty.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PubAnalyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Analyzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+        <state relative-caret-position="340">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PublicationObjectHashTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="360">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
