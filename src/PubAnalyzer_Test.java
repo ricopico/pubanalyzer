@@ -5,8 +5,8 @@ public class PubAnalyzer_Test {
 
     public static void main(String[] args) {
 
-        testTrimLastChar();
-        //testLevenshteinDistance();
+        //testTrimLastChar();
+        testLevenshteinDistance();
 
     }
 
