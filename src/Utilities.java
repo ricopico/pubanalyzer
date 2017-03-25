@@ -22,38 +22,84 @@ public class Utilities {
         return occurences;
     }
 
-    public static double calculateLevenshteinStringDistance(String s1, String s2) {
-        int cost;
+    public static double levenshteinDistance(String s, String t) {
+        /*
+        code from: http://people.cs.pitt.edu/~kirk/cs1501/Pruhs/Spring2006/assignments/editdistance/Levenshtein%20Distance.htm
+         */
+        double d[][]; // matrix
+        int n; // length of s
+        int m; // length of t
+        int i; // iterates through s
+        int j; // iterates through t
+        char s_i; // ith character of s
+        char t_j; // jth character of t
+        int cost; // cost
 
-        /*base: empty strings*/
-        if(s1.length()==0) {return (double)s2.length();}
-        if(s2.length()==0) {return (double)s1.length();}
+        // Step 1
 
-      /* test if last characters of the strings match */
-        if(s1.charAt(s1.length()-1) == s2.charAt(s2.length()-1)) {
-            cost = 0;
+        n = s.length ();
+        m = t.length ();
+        if (n == 0) {
+            return m;
         }
-        else {
-            cost = 1;
+        if (m == 0) {
+            return n;
+        }
+        d = new double[n+1][m+1];
+
+        // Step 2
+
+        for (i = 0; i <= n; i++) {
+            d[i][0] = i;
         }
 
-        /* return minimum of delete char from s, delete char from t, and delete char from both */
-        return returnMinimum(calculateLevenshteinStringDistance(s1.substring(0, s1.length()-1), s2) + 1,
-                calculateLevenshteinStringDistance(s1, s2.substring(0, s2.length()-1)) +1,
-                calculateLevenshteinStringDistance(s1.substring(0, s1.length()-1), s2.substring(0, s2.length()-1) + cost));
+        for (j = 0; j <= m; j++) {
+            d[0][j] = j;
+        }
+
+        // Step 3
+
+        for (i = 1; i <= n; i++) {
+
+            s_i = s.charAt (i - 1);
+
+            // Step 4
+
+            for (j = 1; j <= m; j++) {
+
+                t_j = t.charAt (j - 1);
+
+                // Step 5
+
+                if (s_i == t_j) {
+                    cost = 0;
+                }
+                else {
+                    cost = 1;
+                }
+
+                // Step 6
+
+                d[i][j] = returnMinimum (d[i-1][j]+1, d[i][j-1]+1, d[i-1][j-1] + cost);
+
+            }
+
+        }
+
+        // Step 7
+
+        return d[n][m];
     }
 
     public static double returnMinimum(double d1, double d2, double d3) {
-        if(d1<d2 && d1<d3) {
-            return d1;
-        } else if(d2<d1 && d2<d3) {
-            return d2;
-        } else if(d3<d1 && d3<d2) {
-            return d3;
-        } else {
-            System.err.println("no minimum");
-            return -1;
+        double min = d1;
+        if(d2<min) {
+            min=d2;
         }
+        if(d3<min) {
+            min=d3;
+        }
+        return min;
     }
 
     public static LinkedList<String> splitByDelimiter (String s, String delimiter) {
