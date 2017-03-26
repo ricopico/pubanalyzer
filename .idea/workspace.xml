@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df3c0037-3750-47ab-a5a7-682da1b4118e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/Analyzer.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/Analyzer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/PublicationObjectHashTable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/Utilities.class" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/Utilities.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PubAnalyzer.iml" afterPath="$PROJECT_DIR$/PubAnalyzer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/input/2016faculty.txt" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/input/2016faculty.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PubAnalyzer/output/output.out" afterPath="$PROJECT_DIR$/out/production/PubAnalyzer/output/output.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Analyzer.java" afterPath="$PROJECT_DIR$/src/Analyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" afterPath="$PROJECT_DIR$/src/PublicationObjectHashTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/2016faculty.txt" afterPath="$PROJECT_DIR$/src/input/2016faculty.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/output/output.out" afterPath="$PROJECT_DIR$/src/output/output.out" />
-    </list>
+    <list default="true" id="df3c0037-3750-47ab-a5a7-682da1b4118e" name="Default" comment="" />
     <ignored path="PubAnalyzer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -575,7 +563,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1921" y="-425" width="1918" height="1198" extended-state="1" />
+    <frame x="1921" y="-425" width="1918" height="1198" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
