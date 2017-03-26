@@ -45,7 +45,9 @@ public class Analyzer {
         if(testModeActive) {
             runTestMode();
         } else {
-            LinkedList<String> data = Utilities.textFileToStringList("C:\\Users\\rich\\IdeaProjects\\PubAnalyzer\\src\\input\\2012faculty.txt");
+            //LinkedList<String> data = Utilities.textFileToStringList("C:\\Users\\rich\\IdeaProjects\\PubAnalyzer\\src\\input\\2012faculty.txt");
+            LinkedList<String> data = Utilities.textFileToStringList("C:\\Users\\rich\\IdeaProjects\\PubAnalyzer\\src\\input\\2016faculty.txt");
+
             for(String entry : data) {
                 if((entry != null)
                     && (!(entry.split("\t")[0].equals("Cites")))) {
@@ -58,6 +60,9 @@ public class Analyzer {
             //clean the data
             publicationObjectHashTable.cleanPublicationObjectTable();
             publicationObjectHashTable.cleanAuthorsList();
+
+            //fuzzy algorithms: guess author matches
+            //publicationObjectHashTable.guessAuthorMatches();
 
             if(productionMode.equals("edgeList")) {
                 Set<String> edgeList = new HashSet<>();
