@@ -134,9 +134,29 @@ public class PublicationObjectHashTable {
             toClean.setAuthorsStringFromList(cleanedList);
         }
     }
+    public void guessAuthorMatches() {
+        //check for author potential matches
+        Set<String> seenAuthors = new HashSet<>();
+        for(String title : titleToPublicationObject.keySet()) {
+            for(String author : titleToPublicationObject.get(title).getAuthorsList()) {
+                for (String seenAuthor : seenAuthors) {
+                    //calculate levenshtein distance
+                    double d = Utilities.levenshteinDistance(author, seenAuthor);
+                    if(d<=1 && d>0) {
+                        System.out.println(d + " : " + author + " <=> " + seenAuthor);
+                    }
+
+                }
+
+            }
+            seenAuthors.addAll(titleToPublicationObject.get(title).getAuthorsList());
+            //TODO: Finish this...
+        }
+
+
+
+    }
     /*TODO
-    1. flatten titles
-    2. flatten authors
     3. detect possible name redundancy, merge
      */
 }
