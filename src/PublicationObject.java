@@ -133,13 +133,15 @@ public class PublicationObject {
         setAuthorsString(authorStringToSet);
     }
 
-    public void flattenAuthorsAndTitle() {
+    public void flattenAll() {
         String newTitle = Utilities.flatten(title);
         String newAuthorsString = Utilities.flatten(authorsString);
+        String newSource = Utilities.flatten(source);
 
         setTitle(newTitle);
         setAuthorsString(newAuthorsString);
         setAuthorsListFromString(newAuthorsString);
+        setSource(newSource);
     }
 
     public void setAuthorsList(LinkedList<String> authorsList) {

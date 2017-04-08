@@ -52,7 +52,7 @@ public class Analyzer {
                 if((entry != null)
                     && (!(entry.split("\t")[0].equals("Cites")))) {
                     PublicationObject po = new PublicationObject(entry);
-                    po.flattenAuthorsAndTitle();    //flatten the authors and the title
+                    po.flattenAll();    //flatten the authors and the title
                     publicationObjectHashTable.addPublicationObject(po);
                 }
             }
