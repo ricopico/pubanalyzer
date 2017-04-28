@@ -61,8 +61,8 @@ public class Analyzer {
             publicationObjectHashTable.cleanPublicationObjectTable();
             publicationObjectHashTable.cleanAuthorsList();
 
-            //fuzzy algorithms: guess author matches
-            //publicationObjectHashTable.guessAuthorMatches();
+            //vector model for potential author redundancy reduction
+            publicationObjectHashTable.guessAuthorMatches();
 
             if(productionMode.equals("edgeList")) {
                 Set<String> edgeList = new HashSet<>();

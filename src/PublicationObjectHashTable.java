@@ -154,6 +154,8 @@ public class PublicationObjectHashTable {
         }
 
 
+        //vector model
+        VectorModeler vm = new VectorModeler(this);
 
     }
     /*TODO

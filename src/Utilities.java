@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
@@ -156,4 +158,63 @@ public class Utilities {
     public static String flatten(String s) {
         return s.toLowerCase();
     }
+    public static HashMap<Character, Integer> getCharFrequencyMapFromString(String s) {
+        HashMap<Character, Integer> charToFreq = new HashMap<Character, Integer>();
+        for (int i=0; i<s.length(); i++) {
+            Character c = s.charAt(i);
+            int update = 0;
+            if(charToFreq.keySet().contains(c)) {
+                update = charToFreq.get(c);
+                update++;
+            }
+            charToFreq.put(c, update);
+        }
+        return charToFreq;
+    }
+    public static LinkedList<Character> sortCharByFrequency(HashSet<HashMap<Character, Integer>> charToFreqMaps) {
+
+        //merge into one map
+        HashMap<Character, Integer> charToFreqSuperMap = new HashMap<>();
+        for(HashMap<Character, Integer> map : charToFreqMaps) {
+            mergeCharToFreqMapIntoFirstMap(charToFreqSuperMap, map);
+        }
+
+        //sort the map into a list, in descending order
+        HashMap<Integer, Set<Character>> freqToCharBucket = new HashMap<>();
+        for(Character c : charToFreqSuperMap) {
+            Integer key = charToFreqSuperMap.get(c);
+            if(!freqToCharBucket.keySet().contains(c)) {
+                freqToCharBucket.put(c, new HashSet<Character>());
+            }
+            freqToCharBucket.get(key).add(c);
+        }
+
+        LinkedList<Character> sortedCharList = new LinkedList<>();
+        //TODO: continue this.
+
+//        for(Character c : charToFreqSuperMap) {
+//            int freq = charToFreqSuperMap.get(c);
+//
+//            int indexToInsert = 0;
+//            for(Character sortedChar : sortedCharList) {
+//                int freqOfSortedChar = charToFreqSuperMap.get(sortedChar);
+//
+//            }
+//        }
+
+
+        return sortedCharList;
+    }
+    public static HashMap<Character, Integer> mergeCharToFreqMapIntoFirstMap(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2) {
+        for(Character c : map2.keySet()) {
+            int freq2 = map2.get(c);
+            int update = 1;
+            if(map1.keySet().contains(c)) {
+                update = map1.get(c) + freq2;
+            }
+            map1.put(c, update);
+        }
+        return map1;
+    }
+
 }
