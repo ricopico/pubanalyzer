@@ -136,26 +136,50 @@ public class PublicationObjectHashTable {
     }
     public void guessAuthorMatches() {
         //check for author potential matches
-        Set<String> seenAuthors = new HashSet<>();
-        for(String title : titleToPublicationObject.keySet()) {
-            for(String author : titleToPublicationObject.get(title).getAuthorsList()) {
-                for (String seenAuthor : seenAuthors) {
-                    //calculate levenshtein distance
-                    double d = Utilities.levenshteinDistance(author, seenAuthor);
-                    if(d<=1 && d>0) {
-                        System.out.println(d + " : " + author + " <=> " + seenAuthor);
-                    }
-
-                }
-
-            }
-            seenAuthors.addAll(titleToPublicationObject.get(title).getAuthorsList());
-            //TODO: Finish this...
-        }
+//        Set<String> seenAuthors = new HashSet<>();
+//        for(String title : titleToPublicationObject.keySet()) {
+//            for(String author : titleToPublicationObject.get(title).getAuthorsList()) {
+//                for (String seenAuthor : seenAuthors) {
+//                    //calculate levenshtein distance
+//                    double d = Utilities.levenshteinDistance(author, seenAuthor);
+//                    if(d<=1 && d>0) {
+//                        System.out.println(d + " : " + author + " <=> " + seenAuthor);
+//                    }
+//
+//                }
+//
+//            }
+//            seenAuthors.addAll(titleToPublicationObject.get(title).getAuthorsList());
+//            //TODO: Finish this...
+//        }
 
 
         //vector model
         VectorModeler vm = new VectorModeler(this);
+        //gather potential matches, if levenshtein distance comparison ratio <= 1/8
+        Set<String> seenAuthors = new HashSet<>();
+        for(String title : titleToPublicationObject.keySet()) {
+            for (String author : titleToPublicationObject.get(title).getAuthorsList()) {
+                for (String seenAuthor : seenAuthors) {
+                    //calculate levenshtein distance
+                    double d = Utilities.levenshteinDistance(author, seenAuthor);
+                    //calculate ratios
+                    double newAuthorDistanceRatio = d/author.length();
+                    double oldAuthorDistanceRation = d/seenAuthor.length();
+                    //take average
+                    double average = (newAuthorDistanceRatio + oldAuthorDistanceRation)/2;
+                    System.out.println(average + " : " + author + " <=> " + seenAuthor);
+                    //if 0< ratio <= 1/8 , add to map
+                    if(average > 0 && average <= (1/8)) {
+                        System.out.println(average + " : " + author + " <=> " + seenAuthor);
+                    }
+
+                }
+            }
+            seenAuthors.addAll(titleToPublicationObject.get(title).getAuthorsList());
+        }
+
+
 
     }
     /*TODO
