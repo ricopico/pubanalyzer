@@ -1,10 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by rich on 3/13/2017.
@@ -181,40 +178,68 @@ public class Utilities {
 
         //sort the map into a list, in descending order
         HashMap<Integer, Set<Character>> freqToCharBucket = new HashMap<>();
-        for(Character c : charToFreqSuperMap) {
+        for(Character c : charToFreqSuperMap.keySet()) {
             Integer key = charToFreqSuperMap.get(c);
-            if(!freqToCharBucket.keySet().contains(c)) {
-                freqToCharBucket.put(c, new HashSet<Character>());
+            if(!freqToCharBucket.keySet().contains(key)) {
+                freqToCharBucket.put(key, new HashSet<Character>());
             }
             freqToCharBucket.get(key).add(c);
         }
 
-        LinkedList<Character> sortedCharList = new LinkedList<>();
-        //TODO: continue this.
+        //sort by bucket frequemcy
+        LinkedList<Set<Character>> sortedCharSets = new LinkedList<>();
+        for(Integer i : freqToCharBucket.keySet()) {
+            if(i>=sortedCharSets.size()) {
+                //sortedCharSets.add(i, new HashSet<Character>());
+                growLinkedList(i, sortedCharSets);
+            }
+            else if(sortedCharSets.get(i) == null) {
+                sortedCharSets.add(i, new HashSet<Character>());
+            }
+            for(Character c : freqToCharBucket.get(i)) {
+                sortedCharSets.get(i).add(c);
+            }
+        }
 
-//        for(Character c : charToFreqSuperMap) {
-//            int freq = charToFreqSuperMap.get(c);
-//
-//            int indexToInsert = 0;
-//            for(Character sortedChar : sortedCharList) {
-//                int freqOfSortedChar = charToFreqSuperMap.get(sortedChar);
-//
-//            }
-//        }
+        LinkedList<Character> sortedCharList = new LinkedList<>();  //right now sort ties by alphabetical order.  can adjust later.
+        for(int i=0; i<sortedCharSets.size(); i++) {
+            if(sortedCharSets.get(i) == null) {
+                continue;
+            }
 
+            Character[] toSort = new Character[sortedCharSets.get(i).size()];
+            int j=0;
+            for(Character toAdd : sortedCharSets.get(i)) {
+                toSort[j] = toAdd;
+                j++;
+            }
+            Arrays.sort(toSort);
+
+            for(int k=0; k<toSort.length; k++) {
+                sortedCharList.add(toSort[k]);
+            }
+        }
 
         return sortedCharList;
+
     }
     public static HashMap<Character, Integer> mergeCharToFreqMapIntoFirstMap(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2) {
         for(Character c : map2.keySet()) {
             int freq2 = map2.get(c);
-            int update = 1;
+            int update;
             if(map1.keySet().contains(c)) {
                 update = map1.get(c) + freq2;
+                map1.put(c, update);
+            } else {
+                map1.put(c, freq2);
             }
-            map1.put(c, update);
         }
         return map1;
     }
-
+    public static void growLinkedList(int indexToGrowTo, LinkedList<Set<Character>> toGrow) {
+        int numEltsToAdd = indexToGrowTo - (toGrow.size()-1);
+        for(int i=0; i<numEltsToAdd; i++) {
+            toGrow.add(new HashSet<Character>());
+        }
+    }
 }
