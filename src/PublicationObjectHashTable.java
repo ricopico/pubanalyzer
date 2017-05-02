@@ -168,9 +168,10 @@ public class PublicationObjectHashTable {
                     double oldAuthorDistanceRation = d/seenAuthor.length();
                     //take average
                     double average = (newAuthorDistanceRatio + oldAuthorDistanceRation)/2;
-                    System.out.println(average + " : " + author + " <=> " + seenAuthor);
+                    //System.out.println(average + " : " + author + " <=> " + seenAuthor);
                     //if 0< ratio <= 1/8 , add to map
-                    if(average > 0 && average <= (1/8)) {
+                    //if(average > 0 && average <= (1/8)) {
+                    if(average > 0 && average <= .2) {
                         System.out.println(average + " : " + author + " <=> " + seenAuthor);
                     }
 

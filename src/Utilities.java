@@ -168,14 +168,7 @@ public class Utilities {
         }
         return charToFreq;
     }
-    public static LinkedList<Character> sortCharByFrequency(HashSet<HashMap<Character, Integer>> charToFreqMaps) {
-
-        //merge into one map
-        HashMap<Character, Integer> charToFreqSuperMap = new HashMap<>();
-        for(HashMap<Character, Integer> map : charToFreqMaps) {
-            mergeCharToFreqMapIntoFirstMap(charToFreqSuperMap, map);
-        }
-
+    public static LinkedList<Character> sortCharByFrequency(HashMap<Character, Integer> charToFreqSuperMap) {
         //sort the map into a list, in descending order
         HashMap<Integer, Set<Character>> freqToCharBucket = new HashMap<>();
         for(Character c : charToFreqSuperMap.keySet()) {
@@ -221,7 +214,16 @@ public class Utilities {
         }
 
         return sortedCharList;
+    }
 
+    public static LinkedList<Character> sortCharByFrequency(HashSet<HashMap<Character, Integer>> charToFreqMaps) {
+        //merge into one map
+        HashMap<Character, Integer> charToFreqSuperMap = new HashMap<>();
+        for(HashMap<Character, Integer> map : charToFreqMaps) {
+            mergeCharToFreqMapIntoFirstMap(charToFreqSuperMap, map);
+        }
+
+        return sortCharByFrequency(charToFreqSuperMap);
     }
     public static HashMap<Character, Integer> mergeCharToFreqMapIntoFirstMap(HashMap<Character, Integer> map1, HashMap<Character, Integer> map2) {
         for(Character c : map2.keySet()) {
