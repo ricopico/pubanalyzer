@@ -1,5 +1,7 @@
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 /**
  * Created by rich on 4/27/2017.
@@ -66,7 +68,26 @@ public class VectorModeler {
         }
     }
 
-    public void vectorCompare(double ratioMatchThreshold) {
-        //TODO: this
+    public void vectorCompare(double ratioMatchCeiling) {
+        //posit possible matches based on the threshold
+        HashMap<String, Set<String>> authorToPossibleAliases = new HashMap<>();
+        for(String authorFocus : authorNameToVectorMap.keySet()) {
+            String vectorFocus = authorNameToVectorMap.get(authorFocus);
+            for(String authorCompare : authorNameToVectorMap.keySet()) {
+                if(!authorCompare.equals(authorFocus)) {
+                    String vectorCompare = authorNameToVectorMap.get(authorCompare);
+                    double averageLevenshteinDistance = Utilities.averageRatioLevenshteinStringCompare(vectorCompare, vectorFocus);
+                    if(averageLevenshteinDistance > 0 && averageLevenshteinDistance <= ratioMatchCeiling) {
+                        if(!authorToPossibleAliases.keySet().contains(authorFocus)) {
+                            authorToPossibleAliases.put(authorFocus, new HashSet<>());
+                        }
+                        authorToPossibleAliases.get(authorFocus).add(authorCompare);
+
+                    }
+                }
+            }
+        }
+
+
     }
 }

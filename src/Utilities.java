@@ -244,4 +244,16 @@ public class Utilities {
             toGrow.add(new HashSet<Character>());
         }
     }
+    public static double averageRatioLevenshteinStringCompare(String s1, String s2) {
+
+        //calculate levenshtein distance
+        double d = levenshteinDistance(s1, s2);
+        //calculate ratios
+        double s1Ratio = d/s1.length();
+        double s2Ratio = d/s2.length();
+        //take average
+        double average = (s1Ratio = s2Ratio)/2;
+
+        return average;
+    }
 }
